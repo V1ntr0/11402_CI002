@@ -27,7 +27,33 @@ Brief description of the problem here. [Link to problem](https://onlinejudge.org
 
 ## Code Structure
 ```cpp
-// Your implementation here
+#include <iostream>
+using namespace std;
+int main() {
+	int i, j;
+	while (cin >> i >> j) {//輸入i,j，直到輸入為0 0時結束
+		if (i == 0 && j == 0)
+			break;
+		int carry = 0,temp=0;
+		while (i > 0 || j > 0 ||temp > 0) {//數字都=0結束
+			int s = i % 10 + j % 10+temp;//s計算有沒有進位(把兩個數最後一個數字相加+進位的數字)
+			if (s >= 10)//如果要進位carry+1
+				carry++;
+			//兩個數字除10，進行下一位數進位，temp是進位的數字(s)除10
+			temp = s / 10;
+			i /= 10;
+			j /= 10;
+		}
+		//輸出進位次數
+		if (carry == 0)
+			cout << "No carry operation."<<endl;
+		else if(carry == 1)
+			cout << carry << " carry operation." << endl;
+		else
+			cout << carry << " carry operations."<<endl;
+	}
+	return 0;
+}
 ```
 [source code](./src/s1133343-UVa10035.cpp)
 
