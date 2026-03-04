@@ -27,6 +27,28 @@ Brief description of the problem here. [Link to problem](https://onlinejudge.org
 
 ## Code Structure
 ```cpp
+
+#include <iostream>
+using namespace std;
+int main() {
+	int i, j;
+	while (cin >> i >> j) {//輸入i,j
+		int max_ =0;
+		for (int n = min(i, j); n <= max(i, j); n++) {//從最小開始算到最大(i到j or j到i)
+			int n1 = n, count = 1;
+			while (n1 != 1) {//n=1跳出
+				if (n1 % 2 != 0)
+					n1 = 3 * n1 + 1;
+				else n1 /= 2;
+				count++;
+			}
+			max_ =max (max_, count);//取最大的迴圈數
+		}
+		cout << i << " " << j << " " << max_<<endl;
+	}
+	
+}
+
 ```
 [source code](./src/s1133343-UVa100.cpp)
 
