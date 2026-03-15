@@ -5,8 +5,8 @@
 Brief description of the problem here. [Link to problem](https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=4&page=show_problem&problem=208)
 
 ## Learning Objectives
-- [ ] Understand the Primary Arithmetic conjecture
-- [ ] Implement iterative logic
+- [ ] Understand 
+- [ ] Implement 
 - [ ] Practice input/output handling in C++
 
 ## Solution Approach
