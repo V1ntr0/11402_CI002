@@ -6,17 +6,18 @@ int main() {
 	int t, n;
 	cin >> t;
 	if (t <= 0) return 0;
-	while (t--) {
-		if (t <= 0) break;
+	while ( t--) {
+		//if (t <= 0) break;
 			int a = 0;
 			cin >> n;
-			cin.ignore();
+			//cin.ignore();
 
-			string s;
 			vector<int> history(n+1);
 			
 			for (int i = 0; i < n; i++){
-				getline(cin, s);
+				string s;
+				//getline(cin, s);
+				cin>>s;
 				if (s == "RIGHT") {
 					history[i] = 1;
 				}
@@ -24,12 +25,14 @@ int main() {
 					history[i] = -1;
 				}
 				else {
+					string junk; 
 					int num=0;
-					for (int z = 8; z < s.length(); z++) {
-						if (s[z] >= '0' && s[z] <= '9')
-							num = num * 10 + s[z] - '0';
-					}
-					history[i] = history[num-1];
+					// for (int z = 8; z < s.length(); z++) {
+					// 	if (s[z] >= '0' && s[z] <= '9')
+					// 		num = num * 10 + s[z] - '0';
+					// }
+					cin >> junk >> num; 
+					history[i] = history[num - 1];
 				}
 				a += history[i];
 			}
