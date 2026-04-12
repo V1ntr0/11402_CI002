@@ -1,3 +1,6 @@
+# 88-Merge Sorted Array
+## Code Structure
+```cpp
 class Solution {
 public:
     void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {
@@ -19,3 +22,4 @@ public:
         }
     }
 };
+```

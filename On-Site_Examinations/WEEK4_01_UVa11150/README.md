@@ -8,7 +8,8 @@
 3 個空瓶可以換 1 瓶可樂
 可以「借」1 個空瓶來多換一次（但只能借一次）
 
-請問最多可以喝幾瓶可樂？ere. [Link to problem](https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=2091)
+請問最多可以喝幾瓶可樂？
+Brief description of the problem here. [Link to problem](https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=2091)
 
 ## Learning Objectives
 - [ ] 練習模擬瓶子交換過程
