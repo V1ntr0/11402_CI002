@@ -10,7 +10,6 @@ int main(){
             if(i%2==1){
                 s+='1';
                 count++;
-
             }
             else{
                 s+='0';

@@ -2,17 +2,17 @@
 using namespace std;
 int main() {
 	int i, j;
-	while (cin >> i >> j) {//¿é¤Ji,j
+	while (cin >> i >> j) {//ï¿½ï¿½Ji,j
 		int max_ =0;
-		for (int n = min(i, j); n <= max(i, j); n++) {//±q³Ì¤p¶}©lºâ¨ì³Ì¤j(i¨ìj or j¨ìi)
+		for (int n = min(i, j); n <= max(i, j); n++) {//ï¿½qï¿½Ì¤pï¿½}ï¿½lï¿½ï¿½ï¿½Ì¤j(iï¿½ï¿½j or jï¿½ï¿½i)
 			int n1 = n, count = 1;
-			while (n1 != 1) {//n=1¸õ¥X
+			while (n1 != 1) {//n=1ï¿½ï¿½ï¿½X
 				if (n1 % 2 != 0)
 					n1 = 3 * n1 + 1;
 				else n1 /= 2;
 				count++;
 			}
-			max_ =max (max_, count);//¨ú³Ì¤jªº°j°é¼Æ
+			max_ =max (max_, count);//ï¿½ï¿½ï¿½Ì¤jï¿½ï¿½ï¿½jï¿½ï¿½ï¿½
 		}
 		cout << i << " " << j << " " << max_<<endl;
 	}
