@@ -1,5 +1,10 @@
-#include<bits/stdc++.h>
+//#include<bits/stdc++.h>
+#include<iostream>
+#include<vector>
+#include<fstream>
+
 using namespace std;
+
 int main(){
     string s;
     int casenum=1;
@@ -25,7 +30,5 @@ int main(){
         }
         cout<<"Case "<<casenum++<<": "<<st.size()<<endl;
     }
-
-
 
 }
