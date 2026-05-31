@@ -1,5 +1,29 @@
-# 1700. Number of Students Unable to Eat Lunch
+# 20. Valid Parentheses
 
 ## Code Structure
 ```cpp
+class Solution {
+public:
+    bool isValid(string s) {
+        stack<char> st;
+
+        for (char c : s) {
+            if (c == '(' || c == '[' || c == '{') {
+                st.push(c);
+            } else {
+                if (st.empty()) return false;
+
+                if ((c == ')' && st.top() != '(') ||
+                    (c == ']' && st.top() != '[') ||
+                    (c == '}' && st.top() != '{')) {
+                    return false;
+                }
+
+                st.pop();
+            }
+        }
+
+        return st.empty();
+    }
+};
 ```
