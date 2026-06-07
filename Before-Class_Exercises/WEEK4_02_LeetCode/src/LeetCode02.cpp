@@ -1,7 +1,3 @@
-# 169-Majority Element
-
-## Code Structure
-```cpp
 class Solution {
 public:
     int majorityElement(vector<int>& nums) {
@@ -23,4 +19,3 @@ public:
         return majority;
     }
 };
-```
