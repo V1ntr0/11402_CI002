@@ -5,7 +5,7 @@ int main(){
     while(cin>>n>>m&&(n!=0||m!=0)){
         if(n>m){
              cout<<"Loowater is doomed!"<<endl;
-             break;
+             continue;
         }
         int dragon[n],knight[m];
         for(int a=0;a<n;a++)
@@ -16,28 +16,18 @@ int main(){
         sort(knight,knight+m);
 
         int cost=0;
-        int i,j;
-        for( i=0,j=0;j<n&&i<m; ){
-            if(knight[i]>=dragon[j]){
-                dragon[j]=0;
-                cost+=knight[i];
+        int i=0,j=0;
+        while (i < n && j < m) {
+            if (knight[j] >= dragon[i]) {
+                cost += knight[j];
                 i++;
                 j++;
-
-            }else{
-                i++;
+            } else {
+                j++;
             }
         }
-        bool died=true;
-        for(int z=0;z<n;z++){
-            if(dragon[z]>0){
-                died=false;
-                break;
-            }
-        }
-        if(died){
+        if (i == n)
             cout<<cost<<endl;
-        }
         else
             cout<<"Loowater is doomed!"<<endl;
     }

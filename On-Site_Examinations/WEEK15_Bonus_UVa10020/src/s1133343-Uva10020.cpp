@@ -7,7 +7,7 @@ using namespace std;
 struct seg{
     int l,r;
 };
-bool compare(const seg &a, const seg &b) {
+bool compare(seg a, seg b) {
     return a.l < b.l;
 }
 int main(){
