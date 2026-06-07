@@ -1,23 +1,30 @@
-# 56. Merge Intervals
+# 1046. Last Stone Weight
 
 ## Code Structure
 ```cpp
 class Solution {
 public:
-    vector<vector<int>> merge(vector<vector<int>>& intervals) {
-        vector<vector<int>> ans;
+    int lastStoneWeight(vector<int>& stones) {
+        priority_queue<int> pq;
 
-        sort(intervals.begin(), intervals.end());
+        for (int stone : stones) {
+            pq.push(stone);
+        }
 
-        for (auto& interval : intervals) {
-            if (ans.empty() || ans.back()[1] < interval[0]) {
-                ans.push_back(interval);
-            } else {
-                ans.back()[1] = max(ans.back()[1], interval[1]);
+        while (pq.size() > 1) {
+            int y = pq.top();
+            pq.pop();
+
+            int x = pq.top();
+            pq.pop();
+
+
+            if (y != x) {
+                pq.push(y - x);
             }
         }
 
-        return ans;
+        return pq.empty() ? 0 : pq.top();
     }
 };
 ```

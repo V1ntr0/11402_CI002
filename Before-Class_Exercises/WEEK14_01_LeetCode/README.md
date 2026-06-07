@@ -1,31 +1,25 @@
-# 228. Summary Ranges
+# 1845. Seat Reservation Manager
 
 ## Code Structure
 ```cpp
-class Solution {
+class SeatManager {
 public:
-    vector<string> summaryRanges(vector<int>& nums) {
-        vector<string> ans;
-        int n = nums.size();
+    priority_queue<int, vector<int>, greater<int>> pq;
 
-        for (int i = 0; i < n; ) {
-            int start = nums[i];
-            int j = i;
-
-            while (j + 1 < n && (long long)nums[j + 1] - nums[j] == 1) {
-                j++;
-            }
-
-            if (i == j) {
-                ans.push_back(to_string(start));
-            } else {
-                ans.push_back(to_string(start) + "->" + to_string(nums[j]));
-            }
-
-            i = j + 1;
+    SeatManager(int n) {
+        for (int i = 1; i <= n; i++) {
+            pq.push(i);
         }
-
-        return ans;
+    }
+    
+    int reserve() {
+        int seat = pq.top();
+        pq.pop();
+        return seat;
+    }
+    
+    void unreserve(int seatNumber) {
+        pq.push(seatNumber);
     }
 };
 ```
