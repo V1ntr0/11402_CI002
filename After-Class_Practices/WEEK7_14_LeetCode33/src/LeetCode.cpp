@@ -1,21 +1,31 @@
 class Solution {
 public:
-    void nextPermutation(vector<int>& nums) {
-         int n = nums.size();
+    int search(vector<int>& nums, int target) {
+        int left = 0, right = nums.size() - 1;
 
-        int i = n - 2;
-        while (i >= 0 && nums[i] >= nums[i + 1]) {
-            i--;
-        }
+        while (left <= right) {
+            int mid = left + (right - left) / 2;
 
-        if (i >= 0) {
-            int j = n - 1;
-            while (nums[j] <= nums[i]) {
-                j--;
+            if (nums[mid] == target) {
+                return mid;
             }
-            swap(nums[i], nums[j]);
+
+            if (nums[left] <= nums[mid]) {
+                if (nums[left] <= target && target < nums[mid]) {
+                    right = mid - 1;
+                } else {
+                    left = mid + 1;
+                }
+            }
+            else {
+                if (nums[mid] < target && target <= nums[right]) {
+                    left = mid + 1;
+                } else {
+                    right = mid - 1;
+                }
+            }
         }
 
-        reverse(nums.begin() + i + 1, nums.end());
+        return -1;
     }
 };

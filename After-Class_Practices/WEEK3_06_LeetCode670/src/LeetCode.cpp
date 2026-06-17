@@ -1,12 +1,19 @@
 class Solution {
 public:
-    bool isPowerOfThree(int n) {
-        if(n <= 0)
-            return false;
+    int maximumSwap(int num) {
+        string s = to_string(num);
+        int ans = num;
 
-        while (n % 3 == 0)
-            n /= 3;
+        for (int i = 0; i < s.size(); i++) {
+            for (int j = i + 1; j < s.size(); j++) {
+                swap(s[i], s[j]);
 
-        return n == 1;
+                ans = max(ans, stoi(s));
+
+                swap(s[i], s[j]);
+            }
+        }
+
+        return ans;
     }
 };

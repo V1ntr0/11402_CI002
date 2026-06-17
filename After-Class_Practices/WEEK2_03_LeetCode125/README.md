@@ -8,7 +8,6 @@
 - **Problem Link:** https://leetcode.com/problems/valid-palindrome/description/
 - **Source Code (Correct/Accepted):** [src/your-file-name.cpp](./src/LeetCode.cpp)
 
-
 ## 2. Problem Statement in My Own Words
 
 給定一個字串 s，判斷它是否為迴文。

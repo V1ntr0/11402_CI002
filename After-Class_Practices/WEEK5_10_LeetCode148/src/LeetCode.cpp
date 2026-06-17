@@ -1,21 +1,57 @@
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+ * };
+ */
 class Solution {
 public:
-    void nextPermutation(vector<int>& nums) {
-         int n = nums.size();
+    ListNode* sortList(ListNode* head) {
+        if (!head || !head->next) return head;
 
-        int i = n - 2;
-        while (i >= 0 && nums[i] >= nums[i + 1]) {
-            i--;
+        int n = 0;
+        ListNode* cur = head;
+        while (cur) {
+            n++;
+            cur = cur->next;
         }
 
-        if (i >= 0) {
-            int j = n - 1;
-            while (nums[j] <= nums[i]) {
-                j--;
+        int mid = n / 2;
+
+        cur = head;
+        for (int i = 1; i < mid; i++) {
+            cur = cur->next;
+        }
+
+        ListNode* right = cur->next;
+        cur->next = nullptr;
+        ListNode* left = head;
+
+        left = sortList(left);
+        right = sortList(right);
+
+        return merge(left, right);
+    }
+    ListNode* merge(ListNode* a, ListNode* b) {
+        ListNode dummy(0);
+        ListNode* t = &dummy;
+
+        while (a && b) {
+            if (a->val < b->val) {
+                t->next = a;
+                a = a->next;
+            } else {
+                t->next = b;
+                b = b->next;
             }
-            swap(nums[i], nums[j]);
+            t = t->next;
         }
 
-        reverse(nums.begin() + i + 1, nums.end());
+        t->next = a ? a : b;
+        return dummy.next;
     }
 };

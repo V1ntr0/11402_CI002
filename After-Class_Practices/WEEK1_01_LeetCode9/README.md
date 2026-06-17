@@ -1,7 +1,5 @@
 # LeetCode 9-Palindrome Number
 
-Use this template to review your coding performance for each problem. Write clearly and use your own words.
-
 ## 1. Problem Information
 
 - **Platform:** LeetCode
@@ -34,15 +32,30 @@ Use this template to review your coding performance for each problem. Write clea
 
 ### 最終策略
     利用取餘數與除法，把數字逐位反轉。
-
-## 4. Pseudocode
-```text
-START
+具體流程：
 1. 如果數字小於 0，直接回傳 false。
 2. 用變數 n 儲存原始數字。
 3. 建立 rev 紀錄反轉後的結果。
 4. 每次取出個位數加入 rev。
 5. 最後比較 rev 是否等於原本的 x。
+## 4. Pseudocode
+```text
+START
+
+1. 如果 x < 0
+      return false
+
+2. n = x
+3. rev = 0
+
+4. 當 n > 0 時
+
+      digit = n % 10
+      rev = rev * 10 + digit
+      n = n / 10
+
+5. return (rev == x)
+
 END
 ```
 ## 5. Correct Code
