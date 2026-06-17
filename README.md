@@ -1,4 +1,4 @@
-#CI002 A3 - C++ Programming Laboratory
+# CI002 A3 - C++ Programming Laboratory
 
 # 11402_CI002: C++ Programming Laboratory
 
@@ -6,50 +6,15 @@
 - Student: 詹宜諼
 - Student ID：1133343
 
+## Course Information  
+- **Course Title:** C++ Programming (Laboratory)  
+- **Course Code:** CI002 A3  
+- **Target Audience**: Undergraduate Students  
+- **Duration**: 18 Weeks (including Midterm and Final exams)  
+- **Semester:** 11402  
+- **Credits:** 2  
+- **Instructor:** Yu-Feng Huang  
+- **Course Time(Classroom):** 
+    - Tuesaday 10:00 ~ 12:00 (YZ Building I, R1008)
 
-範本:
-
-# UVa 
-## Problem Description
-
-
- Brief description of the problem here. [Link to problem]()
-
-## Learning Objectives
-- [ ] 
-- [ ] 
-## Solution Approach
-
-### Algorithm Logic
-1. 讀入整數 n
-2. 
-3. 
-4. 
-5. 
-
-### Key Insights
-- 
-- 
-## Code Structure
-```cpp
-
-```
-[source code](./src/s1133343-UVa)
-
-## Complexity Analysis
-- **Time Complexity:** O(?)
-- **Space Complexity:** O(?)
-
-## Notes & Reflection
-- What challenges did you face?
-    - 
-    - 
-- How would you improve this solution?
-    - 
-- What did you learn?
-    - 
-    - 
-
-## References
-- [Problem Link](https://onlinejudge.org/)
-- Related concepts or tutorials
+### 資料夾中的README.md大部分皆有使用AI輔助完成
