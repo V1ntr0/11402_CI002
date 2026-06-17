@@ -42,6 +42,7 @@
 
 
 ## 4. Pseudocode
+```text
 START
 1. Initialize left = 0, right = nums.size() - 1
 2. WHILE left <= right:
@@ -55,7 +56,7 @@ START
        END IF
 3. RETURN -1
 END
-
+```
 ## 5. Correct Code
 ### Correct Code
 ```cpp
