@@ -103,6 +103,6 @@ public:
 - What challenges did you face?
     - 在寫索引映射公式時，除數與取餘數的對象必須精準使用「欄數 `n`」（即每一列有幾個元素），若誤用成 `m` 會導致座標計算完全錯亂。
 - How would you improve this solution?
-    - 當前的解法在程式碼可讀性、時間與空間複雜度上都已經是最優解。
+    - 
 - What did you learn?
     - 學到了如何透過「維度轉換（一維與二維座標映射）」將看似複雜的二維問題，降維轉化成最基礎、最直覺的一維二分搜尋模板。

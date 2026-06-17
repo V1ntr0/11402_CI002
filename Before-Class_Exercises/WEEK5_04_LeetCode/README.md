@@ -40,6 +40,7 @@
 
 
 ## 4. Pseudocode
+```text
 START
 1. Initialize min_price = INT_MAX
 2. Initialize max_profit = 0
@@ -51,10 +52,10 @@ START
        END IF
 4. RETURN max_profit
 END
-
+```
 ## 5. Correct Code
 ### Correct Code
-
+```cpp
 class Solution {
 public:
     int maxProfit(vector<int>& prices) {
@@ -72,7 +73,7 @@ public:
         return max_profit;
     }
 };
-
+```
 **Why it works:**
 
 - 單次遍歷的高效性：只需要一趟 O(n) 迴圈，同時維護「歷史最低價」與「最大獲利」，避免了暴力法重複計算的巢狀迴圈。
