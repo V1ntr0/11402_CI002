@@ -6,7 +6,7 @@
 - **Problem ID:** 349
 - **Problem Title:** Intersection of Two Arrays
 - **Problem Link:** https://leetcode.com/problems/intersection-of-two-arrays/description/
-- **Source Code (Correct/Accepted):** [src/your-file-name.cpp](./src/LeetCode.cpp)https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/
+- **Source Code (Correct/Accepted):** [src/your-file-name.cpp](./src/LeetCode.cpp)
 
 ## 2. Problem Statement in My Own Words
 給定兩個整數陣列 nums1 和 nums2，請找出它們的「交集」，並且結果中的元素：

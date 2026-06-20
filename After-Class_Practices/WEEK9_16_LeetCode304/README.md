@@ -6,7 +6,7 @@
 - **Problem ID:** 304
 - **Problem Title:** Range Sum Query 2D - Immutable
 - **Problem Link:** https://leetcode.com/problems/range-sum-query-2d-immutable/
-- **Source Code (Correct/Accepted):** [src/your-file-name.cpp](./src/LeetCode.cpp)https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/
+- **Source Code (Correct/Accepted):** [src/your-file-name.cpp](./src/LeetCode.cpp)
 
 ## 2. Problem Statement in My Own Words
 給定一個 2D 矩陣 matrix，需要支援多次查詢：

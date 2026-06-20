@@ -6,7 +6,7 @@
 - **Problem ID:** 121
 - **Problem Title:** Best Time to Buy and Sell Stock
 - **Problem Link:** https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/
-- **Source Code (Correct/Accepted):** [src/your-file-name.cpp](./src/LeetCode.cpp)https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/
+- **Source Code (Correct/Accepted):** [src/your-file-name.cpp](./src/LeetCode.cpp)
 
 ## 2. Problem Statement in My Own Words
 給定一個陣列 prices，其中 prices[i] 代表第 i 天的股票價格。

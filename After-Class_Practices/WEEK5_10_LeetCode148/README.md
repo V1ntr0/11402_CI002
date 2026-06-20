@@ -6,7 +6,7 @@
 - **Problem ID:** 148
 - **Problem Title:** Sort List
 - **Problem Link:** https://leetcode.com/problems/sort-list/description/
-- **Source Code (Correct/Accepted):** [src/your-file-name.cpp](./src/LeetCode.cpp)https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/
+- **Source Code (Correct/Accepted):** [src/your-file-name.cpp](./src/LeetCode.cpp)
 
 ## 2. Problem Statement in My Own Words
 給定一個單向鏈結串列 head，請將所有節點按照升序排序。

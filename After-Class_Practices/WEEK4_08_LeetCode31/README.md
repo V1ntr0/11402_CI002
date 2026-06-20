@@ -6,9 +6,7 @@
 - **Problem ID:** 31
 - **Problem Title:** Next Permutation
 - **Problem Link:** https://leetcode.com/problems/next-permutation/
-- **Source Code (Correct/Accepted):** [src/your-file-name.cpp](./src/LeetCode.cpp)https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/
-
-
+- **Source Code (Correct/Accepted):** [src/your-file-name.cpp](./src/LeetCode.cpp)
 
 ## 2. Problem Statement in My Own Words
 給定一個整數陣列 nums，請將它重新排列成「字典序中的下一個更大排列」。

@@ -6,7 +6,7 @@
 - **Problem ID:** 303
 - **Problem Title:** Range Sum Query - Immutable
 - **Problem Link:** https://leetcode.com/problems/range-sum-query-immutable/description/
-- **Source Code (Correct/Accepted):** [src/your-file-name.cpp](./src/LeetCode.cpp)https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/
+- **Source Code (Correct/Accepted):** [src/your-file-name.cpp](./src/LeetCode.cpp)
 
 ## 2. Problem Statement in My Own Words
 給定一個整數陣列 nums，需要多次查詢區間和。

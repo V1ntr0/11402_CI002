@@ -6,7 +6,7 @@
 - **Problem ID:** 35
 - **Problem Title:** Search Insert Position
 - **Problem Link:** https://leetcode.com/problems/search-insert-position/description/
-- **Source Code (Correct/Accepted):** [src/your-file-name.cpp](./src/LeetCode.cpp)https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/
+- **Source Code (Correct/Accepted):** [src/your-file-name.cpp](./src/LeetCode.cpp)
 
 ## 2. Problem Statement in My Own Words
 給定一個已排序（升序）的整數陣列 nums 和一個目標值 target。

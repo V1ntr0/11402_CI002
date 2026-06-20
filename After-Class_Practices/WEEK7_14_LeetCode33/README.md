@@ -6,7 +6,7 @@
 - **Problem ID:** 33
 - **Problem Title:**  Search in Rotated Sorted Array
 - **Problem Link:** https://leetcode.com/problems/search-in-rotated-sorted-array/description/
-- **Source Code (Correct/Accepted):** [src/your-file-name.cpp](./src/LeetCode.cpp)https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/
+- **Source Code (Correct/Accepted):** [src/your-file-name.cpp](./src/LeetCode.cpp)
 
 ## 2. Problem Statement in My Own Words
 給定一個已經排序過但被「旋轉」的陣列 nums，以及一個目標值 target。

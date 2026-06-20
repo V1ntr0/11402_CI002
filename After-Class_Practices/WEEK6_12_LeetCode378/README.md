@@ -6,7 +6,7 @@
 - **Problem ID:** 378
 - **Problem Title:** Kth Smallest Element in a Sorted Matrix
 - **Problem Link:** https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/description/
-- **Source Code (Correct/Accepted):** [src/your-file-name.cpp](./src/LeetCode.cpp)https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/
+- **Source Code (Correct/Accepted):** [src/your-file-name.cpp](./src/LeetCode.cpp)
 
 ## 2. Problem Statement in My Own Words
 給定一個 n x n 的矩陣 matrix，其中：

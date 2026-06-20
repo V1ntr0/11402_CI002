@@ -6,7 +6,7 @@
 - **Problem ID:** 1122
 - **Problem Title:** Relative Sort Array
 - **Problem Link:** https://leetcode.com/problems/relative-sort-array/description/
-- **Source Code (Correct/Accepted):** [src/your-file-name.cpp](./src/LeetCode.cpp)https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/
+- **Source Code (Correct/Accepted):** [src/your-file-name.cpp](./src/LeetCode.cpp)
 
 ## 2. Problem Statement in My Own Words
 給定兩個陣列 arr1 和 arr2。
